@@ -1,0 +1,8 @@
+
+// This is a line comment
+
+(1 + 3) * 10
+
+// Something
+
++ 5
