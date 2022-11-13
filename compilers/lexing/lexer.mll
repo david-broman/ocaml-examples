@@ -1,6 +1,6 @@
 
 {
-open Tokens
+open Token
 }
 
 rule token = parse

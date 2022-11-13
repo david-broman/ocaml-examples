@@ -19,7 +19,7 @@
  *)
 
 open Printf
-open Tokens
+open Token
 
 let get_token_list lexbuf =
   let rec work acc =
