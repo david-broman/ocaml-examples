@@ -29,9 +29,9 @@ let get_token_list lexbuf =
   in List.rev (work [])
 
 let pp_token = function
-  | PLUS -> "PLUS"
+  | ADD -> "ADD"
   | MUL -> "MUL"
-  | NUM(i) -> sprintf "NUM(%d)" i
+  | INT(i) -> sprintf "INT(%d)" i
   | EOF -> "EOF"
 
 let main =

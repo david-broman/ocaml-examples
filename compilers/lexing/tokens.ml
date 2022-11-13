@@ -1,6 +1,6 @@
 
 type tok =
-  | PLUS
+  | ADD
   | MUL
-  | NUM of int
+  | INT of int
   | EOF
