@@ -1,0 +1,7 @@
+
+// This is a line comment
+
+
+let x = 3 * 2 in
+
+x + 4 * x
