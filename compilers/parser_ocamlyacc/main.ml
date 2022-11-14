@@ -1,12 +1,11 @@
-
 (* A simple example showing how to parse using OCamlyacc.
- * By David Broman (C) 2022.
+ * Copyright (C) David Broman, 2022. MIT License.
  *
  * This example shows how to create a grammar in yacc
  * where precedence is given explicitly using productions.
  *
  * This video shows how the code is created:
- *   http://
+ *   (Link to be added)
  *
  * This example does not have any error handling. Please
  * check out the Menhir example for error handling and

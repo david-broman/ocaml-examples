@@ -1,15 +1,14 @@
-
 (* A simple example showing how to parse using Menhir
- * By David Broman (C) 2022.
+ * Copyright (C) David Broman, 2022. MIT License.
  *
  * This example shows how to use precedence in the grammar
- * file, how give simple error messages, and how to use
+ * file, how to give simple error messages, and how to use
  * some of Menhir's syntax extensions. For more comprehensive
  * error reporting, please see the Menhir manual.
  * http://gallium.inria.fr/~fpottier/menhir/
  *
  * This video shows how the code is created:
- *   http://
+ *   (Video to be added)
  *)
 
 open Printf

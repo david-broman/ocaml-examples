@@ -1,13 +1,12 @@
-
 (* An extended example with Menhir that outputs an abstract syntax tree.
- * Copyright (C) David Broman, 2022. MIT license.
+ * Copyright (C) David Broman, 2022. MIT License.
  *
  * This example shows how to parse and generate an abstract syntax tree.
  * The example also shows how keywords are handled, and how to
  * pretty print the AST.
  *
  * This video shows how the code is created:
- *   http://
+ *   (Video to be added)
  *)
 
 open Printf

@@ -1,12 +1,12 @@
-
-(* Simple lexing and pretty printing of tokens. By David Broman (C) 2022.
+(* Simple lexing and pretty printing of tokens.
+ * Copyright (C) David Broman, 2022. MIT License.
  *
  * This simple example shows how the lexer works as a stand-alone
  * application. The example takes a string as input and
  * creates a list of tokens.
  *
  * This video shows how the code is created:
- *   http://
+ *  https://youtu.be/NV91u1VSqfY
  *
  * If you would like to read from the
  * standard input instead, change line
