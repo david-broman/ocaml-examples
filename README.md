@@ -6,9 +6,9 @@ This repo consists of various small example files written in OCaml. Please feel 
 
 ## Compiler Examples
 
-Under the folder `compilers` there are a number of small examples showing you how to write parts of a compiler using OCaml. For each of the videos, there is a corrsponding YouTube video that expains the example in details.
+Under the folder `compilers` there are a number of small examples showing you how to write parts of a compiler using OCaml. For each of the videos, there is a corrsponding YouTube video that expains the example in details. Please check out the (playlist on YouTube)[https://www.youtube.com/playlist?list=PLmG_3qmc10qQKLgP2H_d2BHHzD3RQWBE_] where you can find all the videos.
 
-* `compilers/lexing`: This example shows how to write a small independent lexer in ocamllex. The example takes a string as input and generates a list of tokens. See also the [youtube movie](https://youtu.be/NV91u1VSqfY).
+* `compilers/lexing`: This example shows how to write a small independent lexer in ocamllex. The example takes a string as input and generates a list of tokens. See also the [video](https://youtu.be/SDd9XLlAILc).
 
 * `compilers/parsing_ocamlyacc`: This example shows how to create a grammar in yacc where precedence is given explicitly using productions. The example does not have any error handling. Please check out the Menhir example for error handling and how to make the grammar definition simpler.
 
