@@ -5,7 +5,7 @@
  * where precedence is given explicitly using productions.
  *
  * This video shows how the code is created:
- *   (Link to be added)
+ *    https://youtu.be/be5kY3ZgQRg
  *
  * This example does not have any error handling. Please
  * check out the Menhir example for error handling and

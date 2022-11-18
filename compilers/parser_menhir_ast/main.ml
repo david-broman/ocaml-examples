@@ -1,4 +1,4 @@
-(* An extended example with Menhir that outputs an abstract syntax tree.
+(* An extended example with Menhir that outputs an abstract syntax tree (AST).
  * Copyright (C) David Broman, 2022. MIT License.
  *
  * This example shows how to parse and generate an abstract syntax tree.
@@ -6,7 +6,7 @@
  * pretty print the AST.
  *
  * This video shows how the code is created:
- *   (Video to be added)
+ *   https://youtu.be/ly7yvyaDj08
  *)
 
 open Printf

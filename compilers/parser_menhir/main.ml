@@ -8,7 +8,7 @@
  * http://gallium.inria.fr/~fpottier/menhir/
  *
  * This video shows how the code is created:
- *   (Video to be added)
+ *   https://youtu.be/IiBQBldP4S0
  *)
 
 open Printf
