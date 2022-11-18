@@ -6,7 +6,7 @@ This repo consists of various small example files written in OCaml. Please feel 
 
 ## Compiler Examples
 
-Under the folder `compilers` there are a number of small examples showing you how to write parts of a compiler using OCaml. For each of the videos, there is a corrsponding YouTube video that expains the example in details. Please check out the [playlist on YouTube](https://www.youtube.com/playlist?list=PLmG_3qmc10qQKLgP2H_d2BHHzD3RQWBE_) where you can find all the videos.
+Under the folder [compilers](compilers/ there are a number of small examples showing you how to write parts of a compiler using OCaml. For each of the videos, there is a corrsponding YouTube video that expains the example in details. Please check out the [playlist on YouTube](https://www.youtube.com/playlist?list=PLmG_3qmc10qQKLgP2H_d2BHHzD3RQWBE_) where you can find all the videos.
 
 * `compilers/lexing`: This example shows how to write a small independent lexer in ocamllex. The example takes a string as input and generates a list of tokens. See also the [video](https://youtu.be/SDd9XLlAILc).
 
