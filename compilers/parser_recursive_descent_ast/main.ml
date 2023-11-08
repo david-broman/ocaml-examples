@@ -16,6 +16,7 @@
 open Printf
 open Ast
 open Lexer
+open Parser
 
 (* Reads from channel into a list of characters *)
 let read_channel_to_list channel =
@@ -39,26 +40,10 @@ let main =
   (* List.iter (printf "%c") lst*)
 
   (* Comment out below if you want to print the token sequence *)
-  lst |> lexing |> List.map pprint_token |> List.iter (printf "%s," );
-  printf "\n"
+  (* lst |> lexing |> List.map pprint_token |> List.iter (printf "%s," );
+   printf "\n" *)
+
+  (* Parsing and pretty printing the AST *)
+  lst |> lexing |> parse |> pprint_expr |> printf "%s\n"
 
 
-
-(*
-
-let main =
-  let lexbuf = Lexing.from_channel stdin in
-  let res =
-    try Parser.main Lexer.token lexbuf
-    with
-    | Lexer.Error c ->
-       fprintf stderr "Lexical error at line %d: Unknown character '%c'\n"
-         lexbuf.lex_curr_p.pos_lnum c;
-       exit 1
-    | Parser.Error ->
-       fprintf stderr "Parse error at line %d:\n" lexbuf.lex_curr_p.pos_lnum;
-       exit 1
-  in
-    let _ = res in
-    Printf.printf "%s\n" (pprint_expr res)
- *)
