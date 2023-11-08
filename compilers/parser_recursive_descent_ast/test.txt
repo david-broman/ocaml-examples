@@ -2,5 +2,5 @@
 // This is a line comment
 
 let x = 3 * 8 / (2 - 10) in
-let foo = x + 4 * x in
+let foo = x + 4 - 10 * -x in
 foo

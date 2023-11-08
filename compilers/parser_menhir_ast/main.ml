@@ -5,6 +5,9 @@
  * The example also shows how keywords are handled, and how to
  * pretty print the AST.
  *
+ * Compile using 'make'. Run example using standard input
+ *   ./main.native < test.txt
+ *
  * This video shows how the code is created:
  *   https://youtu.be/ly7yvyaDj08
  *)

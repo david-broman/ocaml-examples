@@ -19,7 +19,7 @@ type token =
 let string_until pred lst =
   let retv a xs = (List.rev a |> List.to_seq |> String.of_seq, xs) in
   let rec work acc = function
-    | x::xs -> if pred x then work (x::acc) xs else retv acc xs
+    | x::xs -> if pred x then work (x::acc) xs else retv acc (x::xs)
     | [] -> retv acc []
   in work [] lst
 
@@ -28,7 +28,7 @@ let is_digit x = x >= '0' && x <= '9'
 let is_letter x = (x = '_') || (x >= 'a' && x <= 'z') || (x >= 'A' && x <= 'Z')
 let is_digit_letter x = is_digit x || is_letter x
 
-(* Toking of a list of characters into a list of tokens *)
+(* Lexing a list of characters into a list of tokens *)
 let lexing lst =
   let rec work acc = function
     | x::xs when is_digit x ->

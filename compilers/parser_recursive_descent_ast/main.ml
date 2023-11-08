@@ -1,4 +1,4 @@
-(* A parser example using a hand-written recursive descent parser that
+(* A parser example using a hand-written recursive-descent parser that
  * outputs an abstract syntax tree (AST).
  * Copyright (C) David Broman, 2023. MIT License.
  *
@@ -26,8 +26,7 @@ let read_channel_to_list channel =
 
 
 let main =
-  (* Read from stdin or from file. Returns a list of chars,
-     which is easy to do lexing from *)
+  (* Reads from stdin or from a file. Returns a list of chars *)
   let lst =
     if Array.length Sys.argv = 1 then read_channel_to_list stdin
     else
@@ -37,11 +36,11 @@ let main =
       lst
   in
   (* Comment out below if you want to print the input character list *)
-  (* List.iter (printf "%c") lst*)
+  (* List.iter (printf "%c") lst; *)
 
   (* Comment out below if you want to print the token sequence *)
   (* lst |> lexing |> List.map pprint_token |> List.iter (printf "%s," );
-   printf "\n" *)
+     printf "\n"; *)
 
   (* Parsing and pretty printing the AST *)
   lst |> lexing |> parse |> pprint_expr |> printf "%s\n"
