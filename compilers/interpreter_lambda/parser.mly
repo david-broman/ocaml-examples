@@ -54,12 +54,12 @@ expr:
     { e }
 
 left:
-  | e = factor
+  | e = atom
     { e }
-  | e1 = left e2 = factor
+  | e1 = left e2 = atom
     { EApp(e1, e2) }
 
-factor:
+atom:
   | i = INT
     { EInt(i) }
   | x = IDENT
