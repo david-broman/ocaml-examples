@@ -1,15 +1,14 @@
-(* An extended example with Menhir that outputs an abstract syntax tree (AST).
- * Copyright (C) David Broman, 2022. MIT License.
+(* An extended interpreter that handles lambdas and closures.
+ * Copyright (C) David Broman, 2026. MIT License.
  *
- * This example shows how to parse and generate an abstract syntax tree.
- * The example also shows how keywords are handled, and how to
- * pretty print the AST.
+ * This example shows how to implement the untyped lambda calculus in
+ * a big-step semantics setting. That is, as an interpreter using an
+ * environment and closures. The example is an extension of
+ * `compilers/interpreter_arith_let`.
  *
  * Compile using 'make'. Run example using standard input
  *   ./main.native < test.txt
  *
- * This video shows how the code is created:
- *   https://youtu.be/ly7yvyaDj08
  *)
 
 open Printf

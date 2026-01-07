@@ -1,6 +1,4 @@
 
 // This is a line comment
 
-let x = 3 * 8 / (2 - 10) in
-let foo = x + 4 - 10 * -x in
-foo
+(lam x. lam y. x + y) 5 4 * 10

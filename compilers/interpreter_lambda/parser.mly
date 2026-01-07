@@ -34,12 +34,12 @@ main:
 let_expr:
   | LET id = IDENT "=" e1 = let_expr IN e2 = let_expr
     { ELet(id, e1, e2) }
+  | LAM id = IDENT "." e = let_expr
+    { ELam(id, e) }
   | e = expr
     { e }
 
 expr:
-  | i = INT
-    { EInt(i) }
   | e1 = expr "+" e2 = expr
     { EBinOp(BopAdd, e1, e2) }
   | e1 = expr "-" e2 = expr
@@ -50,8 +50,18 @@ expr:
     { EBinOp(BopDiv, e1, e2) }
   | "-" e = expr %prec UMINUS
     { EUnOp(UnopMinus, e) }
-  | LAM id = IDENT "." e = expr
-    { ELam(id, e) }
+  | e = left
+    { e }
+
+left:
+  | e = factor
+    { e }
+  | e1 = left e2 = factor
+    { EApp(e1, e2) }
+
+factor:
+  | i = INT
+    { EInt(i) }
   | x = IDENT
     { EVar(x) }
   | "(" e = let_expr ")"
