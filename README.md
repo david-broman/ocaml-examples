@@ -1,6 +1,6 @@
 # OCaml Examples
 
-Copyright (C) David Broman, 2022-2023, MIT Licence
+Copyright (C) David Broman, 2022-2026, MIT Licence
 
 This repo consists of various small example files written in OCaml. Please feel free to use these examples directly within your projects.
 
@@ -16,6 +16,6 @@ Under the folder [compilers](compilers/) there are a number of small examples sh
 
 * [compilers/parser_menhir_ast](compilers/parser_menhir_ast): An extended example with Menhir that outputs an abstract syntax tree (AST). The example also shows how keywords are handled, and how to pretty print the AST. See also the [video](https://youtu.be/ly7yvyaDj08)
 
-* [compilers/interpreter_arith_let](compilers/interpreter_arith_let): In this example, we extend the example [compilers/parser_menhir_ast](compilers/parser_menhir_ast) with an evaluation function, demonstrating how to create an interpreter that can handle both arithmetic expressions and let expressions. For the latter, we also introduce a simple environment for binding names to values.
+* [compilers/interpreter_arith_let](compilers/interpreter_arith_let): In this example, we extend the example `compilers/parser_menhir_ast` with an evaluation function, demonstrating how to create an interpreter that can handle both arithmetic expressions and let expressions. For the latter, we also introduce a simple environment for binding names to values.
 
 * [compilers/parser_recursive_descent_ast](compilers/parser_recursive_descent_ast): An example showing how to implement the same program as in `compilers/parser_menhir_ast`, but using a hand-written recursive descent parser instead. There is currently no video exactly for this code, but you can take a look this general video on [recursive descent parsing](https://youtu.be/T4J3BPy__CU?si=s0nQIlJDi9Ojg5vy). You may also be interested in this video on [Precedence, Associativity, and Rewriting Ambiguous Context-Free Grammars](https://youtu.be/NV91u1VSqfY?si=WnOZGzB8ie6AQxnM) and this one on [Eliminating Left Recursion in Context-Free Grammars](https://youtu.be/bzB9AiAPJVg?si=YJElSFhGhcix-8KM).
