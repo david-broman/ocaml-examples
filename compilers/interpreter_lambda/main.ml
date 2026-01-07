@@ -2,8 +2,8 @@
  * Copyright (C) David Broman, 2026. MIT License.
  *
  * This example shows how to implement the untyped lambda calculus in
- * a big-step semantics setting. That is, as an interpreter using an
- * environment and closures. The example is an extension of
+ * a big-step operational semantics setting. That is, as an interpreter
+ * using an environment and closures. The example is an extension of
  * `compilers/interpreter_arith_let`.
  *
  * Compile using 'make'. Run example using standard input
