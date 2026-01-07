@@ -1,15 +1,15 @@
-(* An extended example with Menhir that outputs an abstract syntax tree (AST).
- * Copyright (C) David Broman, 2022. MIT License.
+(* A simple arithmetic interpreter with let bindings and environments.
+ * Copyright (C) David Broman, 2026. MIT License.
  *
- * This example shows how to parse and generate an abstract syntax tree.
- * The example also shows how keywords are handled, and how to
- * pretty print the AST.
+ * In this example, we extend the example 'parser_menhir_ast' with an
+ * evaluation function, demonstrating how to create an interpreter
+ * that can handle both arithmetic expressions and let expressions.
+ * For the latter, we also introduce a simple environment for binding
+ * names to values.
  *
  * Compile using 'make'. Run example using standard input
- *   ./main.native < test.txt
+ *   ./main.native < test1.txt
  *
- * This video shows how the code is created:
- *   https://youtu.be/ly7yvyaDj08
  *)
 
 open Printf
